@@ -51,11 +51,6 @@ function App() {
     setSearchValue('');
     setCurrentPage(1);
   };
-  // const handleGenreChange = (e) => {
-  //   setSelectedGenre(e.target.value);
-  //   setSearchValue('');
-  //   setCurrentPage(1);
-  // };
 
   const openModal = async (id) => {
     const resp = await fetch(API_URL_MOVIE_DETAILS + id, {
