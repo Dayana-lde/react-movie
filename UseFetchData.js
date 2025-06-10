@@ -3,8 +3,6 @@ import { useEffect, useState } from 'react';
 
 function useFetchData(url, apiKey) {
   const [data, setData] = useState([]);
-  // useEffect срабатывает при изменении url или apiKey.
-  // isMounted — защита от установки данных, если компонент размонтирован.
   useEffect(() => {
     let isMounted = true;
     const fetchData = async () => {
