@@ -20,8 +20,6 @@ function Header({
               type="text"
               className="header__search"
               placeholder="Поиск"
-              // value={searchValue} — текущее значение из состояния.
-              // onChange={(e) => setSearchValue(e.target.value)} — при каждом вводе обновляем searchValue.
               value={searchValue}
               onChange={(e) => setSearchValue(e.target.value)}
             />
